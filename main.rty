@@ -4,6 +4,7 @@
 %
 \input maik.rty
 %\def\refitem#1{\relax}
+\usepackage{subfigure}
 \endinput
 %
 % Конец файла main.rty file.
