@@ -213,8 +213,8 @@ In order to find the optimal $u_i(t)$ the GRadient Ascent Pulse Engineering (GRA
 
 \subsection{Entanglement generation between BECs with quantum optimal control}
 
-Here we model and analyze the methods of quantum optimal control for preparation of special set of entangled states between BECs. This set of entangled states consist of non-maximally entangled states that have the characteristic ‘devil’s crevasse’ form which arises from a $SzSz$ interaction, giving a non-zero entanglement for all time except the states equivalent to the initial product state. This specialized set of entangled states proves highly practical in various quantum information processing applications, including but not limited to quantum teleportation, remote state preparation, and the establishment of quantum networks. In this study, we design such states from bosonic analog of $XY$-Hamiltonian with methods of quantum optimal control. We consider the two-axis two-spin (2A2S) Hamiltonian $$H = H_{2A2S} = \frac{J}{2} (S_1^x S_2^x - S_1^y S_2^y)$$ as a drift Hamiltonian  starting from the initial state $$| \frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}} \rangle \rangle | \frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}} \rangle \rangle$$ convert it to the following non-maximally entangled state from (\ref{bosonqubitentanglement}) which is shown in Figure \ref{fig1:entanglement}c with the use of different control Hamiltonians $S_1^{x,y}$,$S_2^{x,y}$,$(S_1^x S_2^x - S_1^y S_2^y)$, $S_1^x S_2^x$, $S_1^y S_2^y$, $(S^z)^2$ and their combinations.
-In order to realize that we use the well-established QuTIP library \cite{}. All calculations are implemented on Intel(R) Core(TM) i9-9900 CPU @ 3.10GHz (8 cores / 16 threads) with 64GiB RAM. The results are presented on the Figures~\ref{fig2:rotation}, \ref{fig3:time-depended} and \ref{fig4:squeezing}.
+Here we model and analyze the methods of quantum optimal control for preparation of special set of entangled states between BECs. This set of entangled states consist of non-maximally entangled states that have the characteristic ‘devil’s crevasse’ form which arises from a $SzSz$ interaction, giving a non-zero entanglement for all time except the states equivalent to the initial product state. This specialized set of entangled states proves highly practical in various quantum information processing applications, including but not limited to quantum teleportation, remote state preparation, and the establishment of quantum networks. In this study, we design such states from bosonic analog of $XY$-Hamiltonian with methods of quantum optimal control. We consider the two-axis two-spin (2A2S) Hamiltonian $$H = H_{2A2S} = \frac{J}{2} (S_1^x S_2^x - S_1^y S_2^y)$$ as a drift Hamiltonian  starting from the initial state $$| \frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}} \rangle \rangle | \frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}} \rangle \rangle$$ convert it to the following non-maximally entangled state from (\ref{bosonqubitentanglement}) which is shown in Figure~\ref{fig1:entanglement}c with the use of different control Hamiltonians $S_1^{x,y}$,$S_2^{x,y}$,$(S_1^x S_2^x - S_1^y S_2^y)$, $S_1^x S_2^x$, $S_1^y S_2^y$, $(S^z)^2$ and their combinations.
+In order to realize that we use the well-established QuTIP library \cite{qutip}. All calculations are implemented on Intel(R) Core(TM) i9-9900 CPU @ 3.10GHz (8 cores / 16 threads) with 64GiB RAM. The results are presented on the Figures~\ref{fig2:rotation}, \ref{fig3:time-depended} and \ref{fig4:squeezing}.
 
 From Figure~\ref{fig2:rotation}, it is evident that the controls associated with $S_1^y$ and $S_2^y$ exhibit negligible influence on the initial state dynamics when compared to the impact of the drift Hamiltonian itself. This observation holds true for both fidelity and entanglement metrics. Conversely, controls corresponding to $S_1^x$ and $S_2^x$ contribute to an enhancement in fidelity, albeit at the expense of entanglement. This phenomenon may be attributed to the nonlinear behavior of entanglement characterized by the 'devil’s crevasse' pattern during evolution.
 
@@ -246,13 +246,13 @@ This work is supported by Russian Science Foundation (grant no 23-21-00507).
 \begin{center}
     \includegraphics[width=13cm]{fig1.eps}
 \end{center}
-\label{fig1:entanglement}
 \captionstyle{normal}
 \caption{
     {\bf a} The entanglement normalized to the maximum entanglement ($E_{\mbox{\tiny max}} = \log_2 (N+1) $) between two bosonic qubits for the particle numbers as shown.
     {\bf b} Entanglement at a time $ \Omega t= \pi/4N $ for various boson numbers $ N $.
     {\bf c} A schematic representation of the entangled state (\ref{bosonqubitentanglement}).
 }
+\label{fig1:entanglement}
 \end{figure*}
 
 \newpage
